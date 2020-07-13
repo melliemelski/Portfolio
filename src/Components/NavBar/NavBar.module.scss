@@ -1,0 +1,11 @@
+.NavContainer {
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  height: 100vh;
+
+  li {
+    list-style: none;
+  }
+}

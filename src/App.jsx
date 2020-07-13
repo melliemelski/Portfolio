@@ -1,14 +1,21 @@
 import React, { Component } from "react";
 import styles from "./App.module.scss";
+import Routes from "./Containers/Routes/Routes";
+import NavBar from "../src/Components/NavBar"
 
 class App extends Component {
-  state = {  }
   render() { 
     return ( 
     <>
-    <NavBar />
-    <Router />
-    </> 
+    <div className={styles.app}>
+    <div className={styles.navContainer}>
+      <NavBar />
+    </div>
+    <section className={styles.routesContainer}>
+      <Routes />
+    </section> 
+    </div>
+    </>
     );
   }
 }
