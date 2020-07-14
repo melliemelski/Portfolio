@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Router } from "@reach/router";
 
-import Dashboard from "../Dashboard";
+
 import About from "../About";
 import Home from "../Home";
 import Portfolio from "../Portfolio";
@@ -14,8 +14,8 @@ class Routes extends Component {
     
     return (
       <Router>
-        <Dashboard path="/" />
-        <Home path="home" />
+       
+        <Home path="/" />
         <Portfolio path="portfolio" />
         <About path="about" />
       </Router>

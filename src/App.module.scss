@@ -1,10 +1,10 @@
 .app {
   margin: 0;
   padding: 0;
-  background-image: url("./assets/anna-anikina-AtH9GMAkfPE-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to top, rgba(187, 34, 34, 0.945), transparent rgba(255,0,0,0))
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9),  rgba(0, 0, 0, 0.2)), url("./assets/david-becker-crs2vlkSe98-unsplash.jpg");
+  transform: rotateX(360);
 }
 .navContainer {
   height: 60px;

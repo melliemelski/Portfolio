@@ -1,28 +1,56 @@
 import React, { Component } from 'react';
 import styles from "./NavBar.module.scss"
-// import Link from "@reach/router";
 import { Link } from "@reach/router";
 
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 class NavBar extends Component {
-  state = {  }
-  render() { 
-    return ( 
-    <>
-    <div className={styles.NavContainer}>
-      burger menu
-      <h2>Melissa<br></br>Sargent</h2>
-      <Link to="/">Home</Link>
+  state = { 
+    isOpen: false,
+    drop: false
+   };
+
+   toggleOpen = () => {
+     this.setState( { isOpen: !this.state.isOpen, 
+                      drop: !this.state.drop });
+   }
+
+   doDrop = () => {
+    if (this.state.drop===true) {
+      return <div className={styles.dropdown}>
+      <Link to="home">Home</Link>
       <Link to="about">About Me</Link>
       <Link to="portfolio">Portfolio</Link>
-      <FontAwesomeIcon icon={faLinkedinIn} />
-      <FontAwesomeIcon icon={faGithub} />
-      <FontAwesomeIcon icon={faEnvelope} />
-    </div>
+      </div>
+    }
+   }
+
+   animateBurger = () => {
+     if (this.state.isOpen===false) {
+       return <>
+              <div className={styles.bar1}></div>
+              <div className={styles.bar2}></div>
+              <div className={styles.bar3}></div>
+              </>
+     } else {
+       return <>
+              <div className={styles.changebar1}></div>
+              <div className={styles.changebar2}></div>
+              <div className={styles.changebar3}></div>
+              </>
+     }
+   }
+
+  render() { 
+
+    return ( 
+    <>
+      <div className={styles.navContainer} >
+        <div className={styles.burger} onClick={() => this.toggleOpen()}>
+        {this.animateBurger()}
+        </div>
+        {this.doDrop()}
+      </div>
     </> 
     );
   }
