@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Router } from "@reach/router";
+import { Router, Redirect } from "@reach/router";
 
 
 import About from "../About";
@@ -14,8 +14,8 @@ class Routes extends Component {
     
     return (
       <Router>
-       
-        <Home path="/" />
+        <Redirect noThrow from="/" to="home" />
+        <Home path="home" />
         <Portfolio path="portfolio" />
         <About path="about" />
       </Router>

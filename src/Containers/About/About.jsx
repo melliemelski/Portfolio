@@ -8,7 +8,6 @@ import {
   faJsSquare,
   faSass,
   faReact,
-  faBootstrap,
   faYarn,
 } from "@fortawesome/free-brands-svg-icons";
 
@@ -16,7 +15,7 @@ class About extends Component {
 render () {
   return (
     <>
-    <div className={styles.aboutContainer}>About goes here</div>
+    <div className={`${styles.aboutContainer} ${styles.fadeInBck}`}>About goes here</div>
     </>
   )}     
 } 
