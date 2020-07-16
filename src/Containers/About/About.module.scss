@@ -1,108 +1,41 @@
-.aboutContainer {
-  // display: flex;
-  // justify-content: left;
-  // width: 100%;
-  // min-height: calc(100vh - 60px);
-  width: 100px;
-  height: 180px;
+.header {
+  font-family: 'Play', sans-serif;
+  font-size: 2.5em;
+  color: whitesmoke;
   display: flex;
-  background-color: green;
-  .fadeInBck {
-    -webkit-animation: fadeInBck 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-    animation: fadeInBck 5s ;
+  justify-content: center;
+  padding: 1em;
+}
+
+
+.aboutContainer {
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+
+  section {
+    background-color: whitesmoke;
+    opacity: 0.9;
+    color: black;
+    font-family: 'Play', sans-serif;
+    font-size: 1.5em;
+    height: 80vh;
+    width: 80vw;
+    border-radius: 10%;
+    margin: 2em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .text {
+      justify-content: center;
+      align-items: center;
+      padding: 4px;
+    }
   }
-  
-  @-webkit-keyframes fadeInBck {
-    0% {
-      -webkit-transform: translateZ(80px);
-      transform: translateZ(80px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateZ(0);
-      transform: translateZ(0);
-      opacity: 1;
-    }
-  }
-  
-    @keyframes fadeInBck {
-      0% {
-        -webkit-transform: translateZ(80px);
-        transform: translateZ(80px);
-        opacity: 0;
-      }
-      100% {
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
-        opacity: 1;
-      }
-    }
-    }
-
-//   .about {
-//     width: 90%;
-//     margin-bottom: 5vh;
-
-//     div {
-//       margin-bottom: 10px;
-
-//       .fontAwesome {
-//         font-size: 64px;
-//         margin: 10px;
-
-//         &:hover path {
-//           color: black;
-//           transition: all 0.3s ease-in-out;
-//         }
-//       }
-//     }
-
-//     h2 {
-//       font-size: 2.5em;
-//       margin: 10px;
-//     }
-
-//     p {
-//       font-size: 1.5em;
-
-//       a {
-//         font-size: 1em;
-//         font-weight: 900;
-
-//         &:hover {
-//           color: black;
-//         }
-//       }
-//     }
-
-//     ul {
-//       margin-top: 10px;
-//       li {
-//         font-size: 1.5em;
-//       }
-//     }
-//   }
-// }
-
-// @media only screen and (min-width: 768px) {
-//   .aboutMeContainer {
-//     min-height: 100vh;
-//     justify-content: center;
-
-//     .aboutMe {
-//       width: 85%;
-//       div {
-        
-//         h2 {
-//           font-size: 2.5em;
-          
-//         }
-
-//         p {
-//           font-size: 2em;
-//         }
-//       }
-//     }
-//   }
-// }
-
+}

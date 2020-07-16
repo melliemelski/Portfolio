@@ -6,7 +6,8 @@ class Project extends Component {
   render() { 
     return ( 
     <>
-    <div className={styles.ProjectContainer}>Project1</div>
+    <div className={styles.ProjectContainer}>Project1
+    </div>
     </> 
     );
   }

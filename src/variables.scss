@@ -1,11 +1,8 @@
   
-$primary-color: rgb(37, 37, 37);
-$secondary-color: rgb(223, 223, 95);
+$primary-color: rgb(80, 79, 79);
+$secondary-color: rgb(175, 175, 170);
+$base-spacing: 10px;
 
-$secondary-color-80: rgba(223, 223, 95, 0.8);
-$primary-color-80: rgba(37, 37, 37, 0.8);
-
-$base-spacing: 8px;
 
 @mixin flex-column-center {
   display: flex;

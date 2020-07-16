@@ -1,26 +1,36 @@
-.app {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+
+.app {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9),  rgba(0, 0, 0, 0.2)), url("./assets/david-becker-crs2vlkSe98-unsplash.jpg");
-  transform: rotateX(360);
-}
-.navContainer {
-  height: 60px;
-  width: 100vw;
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  }
+
+  .navContainer {
+  
+  max-height: 100vh;
   position: sticky;
+  vertical-align: top;
 }
 
-.routesContainer {
-  width: 100%;
-  min-height: calc(100vh - 60px);
+  .routesContainer {
+  width: 100vw;
+  max-height: 100vh;
+  display: inline-block;
 }
 
 @media only screen and (min-width: 768px) {
   .navContainer {
     display: inline-block;
-    height: 100vh;
+    max-height: 100vh;
     width: 25%;
     vertical-align: top;
     position: sticky;
@@ -28,8 +38,8 @@
 
   .routesContainer {
     display: inline-block;
-    width: 75%;
-    min-height: 100vh;
+    width: 100vw;
+    height: 100vh;
     vertical-align: top;
   }
 }
@@ -40,6 +50,7 @@
   }
 
   .routesContainer {
-    width: 80%;
+    width: 100vw;
+    max-height: 100vh;
   }
 }

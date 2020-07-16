@@ -1,10 +1,5 @@
 .navContainer {
-  font-family: 'Montserrat', sans-serif;
-  background-color: transparent;
-  display: relative;
-  width: 25%vw;
-  height: 50%vh;
-  
+ 
 
 
   .dropdown {
@@ -23,7 +18,7 @@
     transition: 0.8s;
   
     a {
-      margin-top: 40px;
+      margin-top: 60px;
       color: white;
       text-decoration: none;
       margin-bottom: 10px;
@@ -49,8 +44,8 @@
   width: 10%vw;
   background-color: none;
   cursor: pointer;
-  margin: 4px 10px;
-  z-index: 2;
+  margin: 20px 40px;
+  z-index: 1;
 
 
   .bar1 {

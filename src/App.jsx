@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import styles from "./App.module.scss";
 import Routes from "./Containers/Routes/Routes";
-import NavBar from "../src/Components/NavBar"
+import NavBar from "../src/Components/NavBar";
+
 
 class App extends Component {
   render() { 

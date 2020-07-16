@@ -12,24 +12,7 @@ class NavBar extends Component {
 
    toggleOpen = () => {
      this.setState( { isOpen: !this.state.isOpen, 
-                      drop: !this.state.drop });
-   }
-
-  
-     animateBurger = () => {
-     if (this.state.isOpen===false) {
-       return <>
-              <div className={styles.bar1}></div>
-              <div className={styles.bar2}></div>
-              <div className={styles.bar3}></div>
-              </>
-     } else {
-       return <>
-              <div className={`${styles.bar1} ${styles.changebar1}`}></div>
-              <div className={`${styles.bar2} ${styles.changebar2}`}></div>
-              <div className={`${styles.bar3} ${styles.changebar3}`}></div>
-              </>
-     }
+                        drop: !this.state.drop });
    }
 
    doDrop = () => {
@@ -48,7 +31,9 @@ class NavBar extends Component {
     <>
       <div className={styles.navContainer} >
         <div className={styles.burger} onClick={() => this.toggleOpen()}>
-        {this.animateBurger()}
+        <div className={`${styles.bar1} ${this.state.isOpen ? styles.changebar1 : ""}`}></div>
+        <div className={`${styles.bar2} ${this.state.isOpen ? styles.changebar2 : ""}`}></div>
+        <div className={`${styles.bar3} ${this.state.isOpen ? styles.changebar3 : ""}`}></div>
         </div>
         {this.doDrop()}
       </div>

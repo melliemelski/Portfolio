@@ -15,7 +15,15 @@ class About extends Component {
 render () {
   return (
     <>
-    <div className={`${styles.aboutContainer} ${styles.fadeInBck}`}>About goes here</div>
+    <h1 className={styles.header}>About Me</h1>
+    <div className={styles.aboutContainer}>
+      <section><h2>First section goes here</h2>
+        <p className={styles.text}>
+          More text goes here and here and here and here.
+          <FontAwesomeIcon icon={faGitSquare}/>
+        </p>
+      </section>
+    </div>
     </>
   )}     
 } 

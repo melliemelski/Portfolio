@@ -7,8 +7,12 @@ class Portfolio extends Component {
   render() { 
     return ( 
       <>
-      <p className={styles.test}>Portfolio here</p>
-      <Project />
+      <section className={styles.portfolioContainer}>
+        <h2 className={styles.header}>My Projects</h2>
+        <div className={styles.projects}>
+          <Project />
+        </div>
+      </section>
       </>
      );
   }
