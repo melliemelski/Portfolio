@@ -32,9 +32,9 @@ class Home extends Component {
           <h1>Melissa Sargent</h1>
           <h2>Junior Software Developer</h2>
           <div className={styles.fa}>
-            <div className={styles.icon}><FontAwesomeIcon icon={faLinkedinIn} /></div>  
-            <div className={styles.icon}><FontAwesomeIcon icon={faGithub} /></div>
-            <div className={styles.icon}><FontAwesomeIcon icon={faEnvelope} /></div>
+            <a href="https://www.linkedin.com/in/melissa-sargent-1982851ab/" target="_blank"><div className={styles.icon}><FontAwesomeIcon icon={faLinkedinIn} /></div></a> 
+            <a  href="https://github.com/melliemelski" target="_blank"><div className={styles.icon}><FontAwesomeIcon icon={faGithub} /></div></a>
+            <a href="mailto:melissa.sargent@hotmail.co.uk"></a><div className={styles.icon}><FontAwesomeIcon icon={faEnvelope} /></div>
           </div>
           </motion.div>
       </>
