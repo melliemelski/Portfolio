@@ -12,7 +12,7 @@ class Portfolio extends Component {
       <section className={styles.workContainer}>
           
           <div className={`${styles.frame} ${styles.frame1}`}>
-            <p>Nature Memory Game</p><p>Week 4 Game made using Javascript</p>
+            <p>Nature Memory Game<br></br> Week 4 Game made using Javascript</p>
             <div className={styles.link}><a href=""><FontAwesomeIcon icon={faGithub} /></a></div>
           </div>
           <div className={`${styles.frame} ${styles.frame2}`} >
