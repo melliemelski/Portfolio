@@ -8,24 +8,26 @@ const Project = (props) => {
   const {
     title,
     description,
-    subDomainUrl,
+    Url,
     gitHubShow,
     gitHubUrl,
     imageURL,
     languages,
   } = props;
 
+  let divImage =  'backgroundImage: url(imageURL)';
+      
+
   return (
     <div className={styles.cardContainer}>
       <div className={styles.portfolioCard}>
-        <div className={`${styles.portfolioCardText} ${styles.slideInLeft}`}>
-          <img src={imageURL} alt={title} />
+        <div className={styles.frame} style={{divImage}}>
+          {/* <style={imageURL} alt={title} /> */}
           <div className={styles.text}>
-            <h3>{title}</h3>
             <p>{description}</p>
           </div>
-          <div className={styles.links}>
-            <a href={subDomainUrl} target="_blank" rel="noopener noreferrer">
+          <div className={styles.link}>
+            <a href={Url} target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon
                 icon={faExternalLinkAlt}
                 className={styles.fontAwesome}
@@ -52,3 +54,4 @@ const Project = (props) => {
 };
 
 export default Project;
+

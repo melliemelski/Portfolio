@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import styles from "./NavBar.module.scss"
 import { Link } from "@reach/router";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faBars } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 
 

@@ -68,6 +68,7 @@
         text-decoration: none;
         background-color: none;
         height: 100%;
+        border-radius: 30%;
         
 
           &:hover {
@@ -87,8 +88,7 @@
         background-position: center;
         
         :hover {
-          background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9),  rgba(0, 0, 0, 0.6)), url(../../assets/tree.jpg); 
-          // transition: 0.5s;
+          background-color: black;
         }
     }
 

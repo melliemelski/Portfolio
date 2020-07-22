@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 .header {
   font-family: 'Play', sans-serif;
   font-size: 2.5em;
@@ -18,13 +20,13 @@
   margin: 0;
 
   section {
-    background-color: whitesmoke;
+    background-color: $secondary-color;;
     opacity: 0.9;
     color: black;
     font-family: 'Play', sans-serif;
     font-size: 1.5em;
     height: 80vh;
-    width: 80vw;
+    width: 60vw;
     border-radius: 10%;
     margin: 2em;
     display: flex;
@@ -36,6 +38,7 @@
       justify-content: center;
       align-items: center;
       padding: 4px;
+      color: $primary-color;
     }
   }
 }
