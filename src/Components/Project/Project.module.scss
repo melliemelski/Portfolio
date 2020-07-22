@@ -4,20 +4,6 @@
   margin: $base-spacing;
   box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2), 0 4px 7px rgba(0, 0, 0, 0.27);
 
-  .frame {
-    // border: 2px solid blue;
-    position: relative;
-    width: 320px;
-    height: 300px;
-    text-align: center;
-    max-width: 100%;
-    opacity: 0.8;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  
-  
   .portfolioCard {
     position: relative;
     width: 320px;
@@ -25,17 +11,35 @@
     text-align: center;
     max-width: 100%;
 
-    img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      // z-index: 3;
-      pointer-events: none;
-      transition: all 0.3s ease-in-out;
-    }
+    .frame {
+      position: relative;
+      width: 320px;
+      height: 300px;
+      text-align: center;
+      max-width: 100%;
+      opacity: 0.8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      &:hover {
+        box-shadow: 2px 2px 20px white;
+        border: solid 2px white;
+        opacity: 1;
+        }
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        z-index: 3;
+        pointer-events: none;
+        transition: all 0.3s ease-in-out;
+      }
 
     .portfolioCardText {
       @include flex-column-center;
@@ -44,26 +48,53 @@
       background-color: $primary-color;
       padding: 10px;
 
-      .text {
-        transition: all 0.3s ease-in-out;
-        position: absolute;
-        top: 0;
+      // .text {
+      //   transition: all 0.3s ease-in-out;
+      //   position: absolute;
+      //   top: 0;
 
         p {
-          font-size: 1.2em;
-          padding: 0 10%;
+        color: whitesmoke;
+        text-shadow: rgba(0, 0, 0, 0.9);
+        background-color: rgba(0, 0, 0, 0.6);
+        font-size: 1.2em;
         }
-      }
+      
 
-      .links {
-        transition: all 0.3s ease-in-out;
-        position: absolute;
-        bottom: 0;
-        color: $primary-color;
+      .link {
+        font-size: 40px;
+        z-index: 3;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        position: flex-end;
+        padding: 10px;
+        margin-bottom: 5px;
+        color: whitesmoke;
+        text-decoration: none;
+        background-color: none;
+        height: 100%;
+        border-radius: 30%;
+        
+          // border: 2px solid red;
+          
 
         .fontAwesome {
-          font-size: 32px;
-          margin: $base-spacing * 2;
+          // font-size: 32px;
+          // margin: $base-spacing * 2;
+          font-size: 40px;
+          z-index: 3;
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          position: flex-end;
+          padding: 10px;
+          margin-bottom: 5px;
+          color: whitesmoke;
+          text-decoration: none;
+          background-color: none;
+          height: 100%;
+          border-radius: 30%;
 
           &:hover path {
             color: $secondary-color;
@@ -86,24 +117,27 @@
         visibility: hidden;
         opacity: 0;
 
-        p {
-          background-color: $secondary-color;
-          font-size: 18px;
-          border-radius: 5px;
-          padding: 2px 4px;
-          font-weight: 900;
-          color: $primary-color;
-          margin: 1px;
+        // p {
+        //   background-color: $secondary-color;
+        //   font-size: 18px;
+        //   border-radius: 5px;
+        //   padding: 2px 4px;
+        //   font-weight: 900;
+        //   color: $primary-color;
+        //   margin: 1px;
+          p {
+            color: whitesmoke;
+            text-shadow: rgba(0, 0, 0, 0.9);
+            background-color: rgba(0, 0, 0, 0.6);
+            font-size: 1.2em;
 
-          &::selection {
-            color: $primary-color;
-          }
+          
         }
       }
     }
 
     &:hover img {
-      opacity: 0;
+      opacity: 1;
       transition: opacity 0.3s ease-in-out;
 
       button {
@@ -111,23 +145,23 @@
       }
     }
 
-    &:hover .text {
-      top: 15%;
-      transition: all 0.3s ease-in-out;
-    }
+    // &:hover .text {
+    //   top: 15%;
+    //   transition: all 0.3s ease-in-out;
+    // }
 
-    &:hover .languages {
-      bottom: 10%;
-      visibility: visible;
-      transition: all 0.3s ease-in-out;
-      transition-delay: 0.5s;
-      opacity: 1;
-    }
+    // &:hover .languages {
+    //   bottom: 10%;
+    //   visibility: visible;
+    //   transition: all 0.3s ease-in-out;
+    //   transition-delay: 0.5s;
+    //   opacity: 1;
+    // }
 
-    &:hover .links {
-      bottom: 10%;
-      transition: all 0.3s ease-in-out;
-    }
+    // &:hover .links {
+    //   bottom: 10%;
+    //   transition: all 0.3s ease-in-out;
+    // }
   }
 }
 

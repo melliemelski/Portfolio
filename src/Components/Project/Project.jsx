@@ -1,29 +1,31 @@
-import React from "react";
+import React, { Component } from 'react';
 import styles from "./Project.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
-const Project = (props) => {
-  const {
-    title,
-    description,
-    Url,
-    gitHubShow,
-    gitHubUrl,
-    imageURL,
-    languages,
-  } = props;
 
-  let divImage =  'backgroundImage: url(imageURL)';
+class Project extends Component {
+
+  
       
+  render() { 
+    const { title,
+      description,
+      Url,
+      gitHubShow,
+      gitHubUrl,
+      imageURL,
+      languages, } = this.props;
 
-  return (
+    return ( 
+    <>
     <div className={styles.cardContainer}>
       <div className={styles.portfolioCard}>
-        <div className={styles.frame} style={{divImage}}>
-          {/* <style={imageURL} alt={title} /> */}
+        <div className={styles.frame}>
+          <img src={imageURL}/>
           <div className={styles.text}>
+            <h3>{title}</h3>
             <p>{description}</p>
           </div>
           <div className={styles.link}>
@@ -50,8 +52,9 @@ const Project = (props) => {
         </div>
       </div>
     </div>
+    </>
   );
-};
+  };
+}
 
 export default Project;
-

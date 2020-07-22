@@ -3,7 +3,7 @@
   height: 80vh;
   // border: 2px solid blue;
   justify-content: center;
-  overflow-y: scroll;
+ 
 
 
 
@@ -25,7 +25,6 @@
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 5vh;
-    // border: 2px solid red;
     margin: 0 auto;
 
     h3 {
@@ -82,27 +81,13 @@
         opacity: 1;
         }
       
-      &.frame1 {
-        background-image: url("../../assets/e4E.png");
-        background-size: cover;
-        background-position: center;
-        
-        :hover {
-          background-color: black;
-        }
+     
     }
 
-    &.frame2 {
-      background-image: url(../../assets/BrewDog.jpg);
-      background-size: cover;
-    }
+   
 
-    &.frame3 {
-      background-image: url(../../assets/tree.jpg);
-      background-size: cover;
-    }
+    
       
     }
 
   }
-}

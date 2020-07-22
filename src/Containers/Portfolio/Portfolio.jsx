@@ -34,7 +34,7 @@ class Portfolio extends Component {
                 Url=""
                 gitHubShow="true"
                 gitHubUrl="https://github.com/nology-tech/ewe4ewe"
-                imageURL="../../../public/assets/tree.jpg"
+                imageURL="../../assets/tree.jpg"
                 languages={["ReactJS"]}
               />
                <Project

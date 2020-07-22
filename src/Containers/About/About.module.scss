@@ -20,9 +20,9 @@
   margin: 0;
 
   section {
-    background-color: $secondary-color;;
+    background-color: rgba(10, 27, 48, 0.947);
     opacity: 0.9;
-    color: black;
+    color: $primary-color;
     font-family: 'Play', sans-serif;
     font-size: 1.5em;
     height: 80vh;
